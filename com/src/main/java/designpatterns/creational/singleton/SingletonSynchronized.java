@@ -5,7 +5,7 @@ package main.java.designpatterns.creational.singleton;
  */
 public class SingletonSynchronized {
 
-    private static SingletonSynchronized singletonSynchronized = null;
+    private static volatile SingletonSynchronized singletonSynchronized = null;
 
     private SingletonSynchronized (){}
 
