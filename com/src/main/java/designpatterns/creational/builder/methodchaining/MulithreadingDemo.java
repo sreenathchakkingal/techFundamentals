@@ -13,7 +13,7 @@ public class MulithreadingDemo {
 
             @Override
             public void run() {
-                student.setName("name1",1000).setAddress("address1").setId(1);
+                student.setName("name1").setAddress("address1",5).setId(1);
 //
             }
         });
@@ -22,12 +22,18 @@ public class MulithreadingDemo {
 
             @Override
             public void run() {
-                student.setName("name2",5000).setAddress("address2").setId(2);
+                student.setName("name2").setAddress("address2").setId(2);
             }
         });
+        t1.start();
+        t2.start();
+        try {
+            t1.join();
+            t2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        t1.run();
-        t2.run();
     }
 
     public Student getStudent()
@@ -36,7 +42,7 @@ public class MulithreadingDemo {
     }
 
     public static void main(String[] args) {
-        for(int i=0; i<3 ; i++)
+        for(int i=0; i<1 ; i++)
         {
             final MulithreadingDemo mulithreadingDemo = new MulithreadingDemo();
             mulithreadingDemo.runMultipleThreads();

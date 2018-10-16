@@ -13,9 +13,9 @@ public class Student {
         return this;
     }
 
-    public Student setName(String name, int timeThatSetNameShouldTake) {
+    public Student setName(String name, int timeSeconds) {
+        someTimeConsumingThing(timeSeconds);
         this.name = name;
-        someTimeConsumingThing(timeThatSetNameShouldTake);
         return this;
     }
 
@@ -23,15 +23,20 @@ public class Student {
         return this.setName(name, 0);
     }
 
-    private void someTimeConsumingThing(int timeInMilliseconds) {
+    private void someTimeConsumingThing(int timeSeconds) {
         try {
-            Thread.sleep(timeInMilliseconds);
+            Thread.sleep(timeSeconds*1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
     public Student setAddress(String address) {
+        return this.setAddress(address, 0);
+    }
+
+    public Student setAddress(String address, int timeSeconds) {
+        someTimeConsumingThing(timeSeconds);
         this.address = address;
         return this;
     }

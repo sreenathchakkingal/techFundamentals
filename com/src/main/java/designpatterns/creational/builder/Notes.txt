@@ -9,4 +9,4 @@ method chaining : https://www.geeksforgeeks.org/builder-pattern-in-java/
 
 Method chaining is a useful design pattern but however if accessed concurrently, a thread may observe some fields to contain
 inconsistent values. Although all setter methods in above example are atomic, but calls in the method chaining can lead
-to inconsistent object state when the object is modified concurrently.
+to inconsistent object state when the object is modified concurrently. see example : MulithreadingDemo
