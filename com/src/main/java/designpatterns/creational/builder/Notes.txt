@@ -1,0 +1,12 @@
+Useful when there could be several flavors of an object. Or when there are a lot of steps involved in creation of an object.
+
+public Hero(Profession profession, String name, HairType hairType, HairColor hairColor, Armor armor, Weapon weapon) {}
+As you can see the number of constructor parameters can quickly get out of hand and it might become difficult to understand
+the arrangement of parameters. Plus this parameter list could keep on growing if you would want to add more options in future.
+This is called telescoping constructor anti-pattern.
+
+method chaining : https://www.geeksforgeeks.org/builder-pattern-in-java/
+
+Method chaining is a useful design pattern but however if accessed concurrently, a thread may observe some fields to contain
+inconsistent values. Although all setter methods in above example are atomic, but calls in the method chaining can lead
+to inconsistent object state when the object is modified concurrently.

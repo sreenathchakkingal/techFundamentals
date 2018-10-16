@@ -1,0 +1,5 @@
+get the Method Chaining to work with threads
+builder pattern
+
+https://www.geeksforgeeks.org/builder-pattern-in-java/
+https://www.java-design-patterns.com/patterns/builder/

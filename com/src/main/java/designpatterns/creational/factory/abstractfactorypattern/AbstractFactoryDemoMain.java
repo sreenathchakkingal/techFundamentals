@@ -5,7 +5,7 @@ import main.java.designpatterns.creational.factory.domain.Animal;
 /**
  * Created by Kannan on 10/15/2018.
  */
-public class FactoryMain {
+public class AbstractFactoryDemoMain {
 
     public static void main(String[] args) {
 
