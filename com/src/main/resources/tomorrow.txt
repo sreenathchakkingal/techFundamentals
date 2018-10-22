@@ -1,0 +1,2 @@
+bridge design pattern:
+https://www.geeksforgeeks.org/bridge-design-pattern/
