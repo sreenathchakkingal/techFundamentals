@@ -1,4 +1,0 @@
-builder pattern :
-learn how builder pattern avoids the inconsistent state issues that normal method chaining causes.
-https://www.geeksforgeeks.org/builder-pattern-in-java/
-https://www.java-design-patterns.com/patterns/builder/
