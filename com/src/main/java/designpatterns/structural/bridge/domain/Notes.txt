@@ -1,0 +1,4 @@
+https://www.geeksforgeeks.org/bridge-design-pattern/
+when there are multiple hierachies reference one within other, preferring compostion over inheritance.
+without bridge patter there will be a single monolithic hierachy. In this example, we cna easiy add a method
+to Workshop interface without impacting vehicles. In the link look for with and without bridge uml diagram.
