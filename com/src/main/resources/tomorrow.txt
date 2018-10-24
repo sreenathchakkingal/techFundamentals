@@ -1,3 +1,1 @@
-composite design patter :
-https://www.baeldung.com/java-composite-pattern
-https://www.geeksforgeeks.org/composite-design-pattern/
+facade pattern
