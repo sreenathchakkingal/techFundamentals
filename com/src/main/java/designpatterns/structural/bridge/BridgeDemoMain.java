@@ -1,4 +1,4 @@
-package main.java.designpatterns.structural.bridge.domain;
+package main.java.designpatterns.structural.bridge;
 
 import main.java.designpatterns.structural.bridge.domain.vehicle.Bike;
 import main.java.designpatterns.structural.bridge.domain.vehicle.Car;
