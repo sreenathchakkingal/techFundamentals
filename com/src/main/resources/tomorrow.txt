@@ -1,1 +1,4 @@
-facade pattern
+complete VehicleFactory for flyweight : https://www.geeksforgeeks.org/flyweight-design-pattern/
+Should singleton be final class
+
+diff between flyweight and prototype
