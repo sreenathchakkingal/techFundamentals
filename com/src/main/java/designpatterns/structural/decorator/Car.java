@@ -6,7 +6,7 @@ package main.java.designpatterns.structural.decorator;
 public class Car implements Vehicle {
 
     @Override
-    public void description() {
+    public void type() {
         System.out.println("this is a car");
     }
 }

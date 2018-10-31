@@ -5,13 +5,16 @@ package main.java.designpatterns.structural.flyweight;
  */
 public class SwiftCar implements Vehicle {
 
+    private String type;
+    private String color;
+
     @Override
-    public void assignType(String type) {
-        System.out.println("Swift");
+    public void assignType() {
+        this.type="SWIFT";
     }
 
     @Override
     public void assignColor(String color) {
-        System.out.println("Red");
+        this.color=color;
     }
 }

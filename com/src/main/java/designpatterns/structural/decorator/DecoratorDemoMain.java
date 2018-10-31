@@ -7,12 +7,12 @@ package main.java.designpatterns.structural.decorator;
 public class DecoratorDemoMain {
     public static void main(String[] args) {
         Vehicle car = new Car();
-        car.description();
+        car.type();
 
         Vehicle ritzCar = new RitzCar(car);
         Vehicle swiftCar = new SwiftCar(car);
 
-        ritzCar.description();
-        swiftCar.description();
+        ritzCar.type();
+        swiftCar.type();
     }
 }

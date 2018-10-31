@@ -10,8 +10,8 @@ public class RitzCar extends CarDecorator {
     }
 
     @Override
-    public void description() {
-        super.description();
+    public void type() {
+        super.type();
         System.out.println("Ritz type");
         System.out.println("Grey color");
     }

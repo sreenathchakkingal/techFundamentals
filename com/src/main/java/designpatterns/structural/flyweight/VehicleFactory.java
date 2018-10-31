@@ -10,18 +10,24 @@ public class VehicleFactory {
 
     private static Map<String, Vehicle> map = new HashMap();
 
-    public Vehicle getVehicle(String type)
+    public static Vehicle getVehicle(String type)
     {
-        Vehicle vehicle;
-        if("Ritz".equalsIgnoreCase(type))
+        Vehicle vehicle=map.get(type);
+
+        if(vehicle==null)
         {
-            vehicle=new RitzCar();
-        }
-        if("Swift".equalsIgnoreCase(type))
-        {
-            vehicle=new SwiftCar();
+            if("RITZ".equalsIgnoreCase(type))
+            {
+                vehicle=new RitzCar();
+            }
+            if("SWIFT".equalsIgnoreCase(type))
+            {
+                vehicle=new SwiftCar();
+            }
+            map.put(type, vehicle);
         }
 
-        return map.putIfAbsent(type, vehicle);
+        return vehicle;
     }
+
 }

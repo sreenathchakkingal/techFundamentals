@@ -5,6 +5,6 @@ package main.java.designpatterns.structural.decorator;
  */
 public interface Vehicle {
 
-    public void description();
+    public void type();
 
 }

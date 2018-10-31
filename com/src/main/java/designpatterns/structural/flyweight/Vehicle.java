@@ -5,6 +5,6 @@ package main.java.designpatterns.structural.flyweight;
  */
 public interface Vehicle{
 
-    public void assignType(String type);
+    public void assignType();
     public void assignColor(String color);
 }

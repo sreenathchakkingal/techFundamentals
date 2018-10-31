@@ -5,13 +5,16 @@ package main.java.designpatterns.structural.flyweight;
  */
 public class RitzCar implements Vehicle {
 
+    private String type;
+    private String color;
+
     @Override
-    public void assignType(String type) {
-        System.out.println("Ritz");
+    public void assignType() {
+        this.type="RITZ";
     }
 
     @Override
     public void assignColor(String color) {
-        System.out.println("Grey");
+        this.color=color;
     }
 }

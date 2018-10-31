@@ -10,8 +10,8 @@ public class SwiftCar extends CarDecorator {
     }
 
     @Override
-    public void description() {
-        super.description();
+    public void type() {
+        super.type();
         System.out.println("Swift type");
         System.out.println("Red Color");
     }

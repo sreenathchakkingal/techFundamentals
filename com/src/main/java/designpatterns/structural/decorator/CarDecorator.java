@@ -12,7 +12,7 @@ public abstract class CarDecorator implements Vehicle {
         this.vehicle = vehicle;
     }
     @Override
-    public void description() {
-        System.out.println("this is a car");
+    public void type() {
+        System.out.println("this is a car decorator");
     }
 }

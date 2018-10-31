@@ -12,7 +12,7 @@ public class Employees implements Cloneable{
 
     public Employees()
     {
-        //lets say this is picking up the employee list is a costly operation say by reading a db , and then populating the array list
+        //picking up the employee list is a costly operation say by reading a db , and then populating the array list
         this.employees =  getListOfEmployeesFromDb();
     }
 
@@ -29,7 +29,7 @@ public class Employees implements Cloneable{
 
     // this is not a costly operation as this does not involve any db connection
     public List<String> getEmployees() {
-        return employees;
+        return this.employees;
     }
 
     public Employees(List<String> employees)
