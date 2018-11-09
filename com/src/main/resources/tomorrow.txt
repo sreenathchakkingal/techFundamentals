@@ -1,5 +1,2 @@
-Iterator
-https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm
-https://www.geeksforgeeks.org/iterator-pattern/
-make Iterator generic
 Next : chain of responsibility
+https://dzone.com/articles/chain-of-responsibility-design-pattern-in-java-2-i
