@@ -3,7 +3,7 @@ package main.java.designpatterns.behavioral.iterator;
 /**
  * Created by Kannan on 11/5/2018.
  */
-public class EmployeeIterator implements Iterator {
+public class EmployeeIterator implements Iterator<Employee> {
 
     private Employee[] employees = null;
     private int pointer=0;
@@ -18,7 +18,7 @@ public class EmployeeIterator implements Iterator {
     }
 
     @Override
-    public Object next() {
+    public Employee next() {
         return employees[pointer++];
     }
 }

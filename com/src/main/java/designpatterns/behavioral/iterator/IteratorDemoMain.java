@@ -10,10 +10,11 @@ public class IteratorDemoMain {
         employeeRepository.add(new Employee(2, "b"));
         employeeRepository.add(new Employee(3, "c"));
         employeeRepository.add(new Employee(4, "d"));
-        final Iterator iterator = employeeRepository.getIterator();
+        final Iterator<Employee> iterator = employeeRepository.getIterator();
         while(iterator.hasNext())
         {
-            System.out.println(iterator.next());
+            final Employee temp = iterator.next();
+            System.out.println(temp.getId()+" : " + temp.getName());
         }
     }
 }
