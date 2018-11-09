@@ -1,1 +1,5 @@
-rectify decorator pattern
+Iterator
+https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm
+https://www.geeksforgeeks.org/iterator-pattern/
+make Iterator generic
+Next : chain of responsibility

@@ -1,4 +1,4 @@
-package main.java.designpatterns.structural.command;
+package main.java.designpatterns.behavioral.command;
 
 /**
  * Created by Kannan on 11/2/2018.
