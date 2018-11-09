@@ -1,4 +1,4 @@
-package main.java.designpatterns.behavioral.iterator.domain;
+package main.java.designpatterns.behavioral.iterator;
 
 /**
  * Created by Kannan on 11/5/2018.
@@ -19,5 +19,10 @@ public class Employee {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return this.id+" : "+ this.name;
     }
 }

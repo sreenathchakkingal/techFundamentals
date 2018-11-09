@@ -1,34 +1,27 @@
 package main.java.designpatterns.behavioral.iterator;
 
-import main.java.designpatterns.behavioral.iterator.domain.Employee;
-
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Created by Kannan on 11/5/2018.
  */
 public class EmployeeRepository implements Container {
 
-    private List<Employee> employees = new ArrayList<>();
-
+    private Employee[] employees = new Employee[10];
+    int pointer = 0;
     public void add(Employee employee)
     {
-        employees.add(employee);
+        employees[pointer++]=employee;
     }
 
     public void add(Employee... employeeVarArgs)
     {
         for (Employee employee : employeeVarArgs)
         {
-            employees.add(employee);
+            add(employee);
         }
     }
 
-
-
     @Override
     public Iterator getIterator() {
-        return new EmpoyeeIterator();
+        return new EmployeeIterator(employees);
     }
 }
