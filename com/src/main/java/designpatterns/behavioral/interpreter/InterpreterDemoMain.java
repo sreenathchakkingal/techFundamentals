@@ -5,9 +5,13 @@ package main.java.designpatterns.behavioral.interpreter;
  */
 public class InterpreterDemoMain {
 
-    public static void main(String[] args) {
-        int i = 28;
-        Expression expression = new IntToBinaryExpression(i);
+    private Context context = null;
 
+    public static void main(String[] args) {
+        final Context context = new Context();
+        Expression addExpression = new AddExpression("add 10 to 15");
+        Expression subExpression = new SubtractExpression("subtract 10 from 15");
+        System.out.println(addExpression.interpret(context));
+        System.out.println(subExpression.interpret(context));
     }
 }
