@@ -3,6 +3,8 @@ package main.java.designpatterns.behavioral.interpreter;
 /**
  * Created by Kannan on 11/10/2018.
  */
+
+//this design pattern is used when we come with our own grammer
 public class InterpreterDemoMain {
 
     private Context context = null;
