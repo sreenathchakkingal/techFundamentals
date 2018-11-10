@@ -1,4 +1,4 @@
-package main.java.designpatterns.structural.bridge.composite;
+package main.java.designpatterns.structural.composite;
 
 import java.util.ArrayList;
 import java.util.List;

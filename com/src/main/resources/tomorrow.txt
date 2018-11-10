@@ -1,1 +1,2 @@
-Next : chain of responsibility
+rewrite interpreter
+https://www.baeldung.com/java-interpreter-pattern

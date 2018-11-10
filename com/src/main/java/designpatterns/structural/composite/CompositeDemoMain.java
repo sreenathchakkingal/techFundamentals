@@ -1,4 +1,4 @@
-package main.java.designpatterns.structural.bridge.composite;
+package main.java.designpatterns.structural.composite;
 
 /**
  * Created by Kannan on 10/24/2018.

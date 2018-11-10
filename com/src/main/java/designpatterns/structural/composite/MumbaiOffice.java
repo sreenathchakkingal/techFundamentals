@@ -1,13 +1,13 @@
-package main.java.designpatterns.structural.bridge.composite;
+package main.java.designpatterns.structural.composite;
 
 /**
  * Created by Kannan on 10/24/2018.
  */
-public class BlrOffice implements Office {
+public class MumbaiOffice implements Office {
 
     private String officeName;
 
-    public BlrOffice(String officeName) {
+    public MumbaiOffice(String officeName) {
         this.officeName = officeName;
     }
 
