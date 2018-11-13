@@ -1,1 +1,1 @@
-memento design pattern
+observer pattern : https://java2blog.com/observer-design-pattern-in-java/
