@@ -1,1 +1,1 @@
-observer pattern : https://java2blog.com/observer-design-pattern-in-java/
+visitor pattern : https://www.geeksforgeeks.org/visitor-design-pattern/
