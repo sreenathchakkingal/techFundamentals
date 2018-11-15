@@ -1,1 +1,1 @@
-visitor pattern : https://www.geeksforgeeks.org/visitor-design-pattern/
+strategy pattern
