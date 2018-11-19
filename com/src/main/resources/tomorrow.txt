@@ -1,1 +1,1 @@
-mediator design pattern : https://www.journaldev.com/1730/mediator-design-pattern-java
+data structures
