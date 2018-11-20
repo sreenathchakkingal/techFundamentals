@@ -1,0 +1,8 @@
+The following code computes the Nth Fibonacci number.
+1 int fib(int n) {
+2 if (n <= 0) return 0;
+3 else if (n == 1) return 1;
+4 return fib(n - 1) + fib(n - 2);
+5 }
+We can use the earlier pattern we'd established for recursive calls: O( branches ^ depth).
+There are 2 branches per call, and we go as deep as N, therefore the runtime is O( 2^N).
