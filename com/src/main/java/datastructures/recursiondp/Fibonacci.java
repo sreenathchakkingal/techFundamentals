@@ -1,4 +1,4 @@
-package main.resources.datastructures.recursiondp;
+package main.java.datastructures.recursiondp;
 
 /**
  * Created by Kannan on 11/22/2018.
@@ -30,11 +30,12 @@ public class Fibonacci {
     private int dpTopDown(int i, int[] mem) {
         if(i==0 || i ==1)
         {
-            return i;
+            mem[i]= i;
         }
-        if(mem[i]==0)
+        else if(mem[i]==0)
         {
-            return dpTopDown(i - 1, mem)+ dpTopDown(i - 2, mem);
+            System.out.println("computing for "+i);
+            mem[i]=dpTopDown(i - 1, mem)+ dpTopDown(i - 2, mem);
         }
         return mem[i];
     }
@@ -44,6 +45,7 @@ public class Fibonacci {
         {
             return i;
         }
+        System.out.println("computing for "+i);
         return recursion(i-1)+recursion(i-2);
     }
 }
