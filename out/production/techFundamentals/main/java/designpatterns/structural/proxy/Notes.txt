@@ -1,0 +1,4 @@
+Proxy pattern does – “Controls and manage access to the object they are protecting“.
+eg: preventing non admins from running rm commands , restricting acess to all internet sites
+https://www.geeksforgeeks.org/proxy-design-pattern/
+https://www.journaldev.com/1572/proxy-design-pattern

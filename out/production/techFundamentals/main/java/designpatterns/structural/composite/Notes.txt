@@ -1,0 +1,5 @@
+composite design patter :
+https://www.baeldung.com/java-composite-pattern
+https://www.geeksforgeeks.org/composite-design-pattern/
+
+The key concept is that you can manipulate a single instance of the object just as you would manipulate a group of them.

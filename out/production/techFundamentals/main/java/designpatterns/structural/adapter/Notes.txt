@@ -1,0 +1,4 @@
+can be of two types :
+class adapter : uses inheritance, actually this needs to implement both the interfaces but then java does not support multiple
+inheritance
+object adapter : uses composition, thats the example shown

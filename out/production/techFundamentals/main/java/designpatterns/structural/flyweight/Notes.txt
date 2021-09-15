@@ -1,0 +1,20 @@
+https://www.geeksforgeeks.org/flyweight-design-pattern/
+
+Flyweight pattern: when we need to create a large number of similar objects.
+Use a HashMap that stores reference to the object which have already been created,
+every object is associated with a key. Now when a client wants to create an object, he simply has
+to pass a key associated with it and if the object has already been created we simply get the reference to
+that object else it creates a new object and then returns it reference to the client.
+
+Intrinsic and Extrinsic States
+
+Suppose in a text editor when we enter a character, an object of Character class is created,
+the attributes of the Character class are {name, font, size}. We do not need to create an object every time client
+enters a character since letter ‘B’ is no different from another ‘B’ . If client again types a ‘B’
+we simply return the object which we have already created before. Now all these are intrinsic states
+(name, font, size), since they can be shared among the different objects as they are similar to each other.
+
+
+Main difference between this and the prototype pattern is flyweight will save space and prototype time.
+Flyweight is used when creating multiple type of single object.
+Prototype is used when creating single type of single object.

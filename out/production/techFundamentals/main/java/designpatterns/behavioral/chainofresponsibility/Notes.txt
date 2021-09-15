@@ -1,0 +1,5 @@
+https://dzone.com/articles/chain-of-responsibility-design-pattern-in-java-2-i
+
+We have a request that needs to collect data from different external third-party data storages like a database,
+file storage, and cloud environments. We will develop a chain of such data collectors that are responsible for
+collecting data from different sources. First, we will define the type of RequestHandler.
