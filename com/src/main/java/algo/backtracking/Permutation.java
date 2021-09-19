@@ -1,6 +1,4 @@
-package main.java.algo.combinatorial;
-
-import main.java.helloworld.Solution;
+package main.java.algo.backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +12,7 @@ public class Permutation {
     }
 
     private static void dfs(List<Character> path, List<List<Character>> res, char[] letters, boolean[] visited) {
-        if (path.size() == letters.length) {
+        if (path.size() ==letters.length) {
             // make a deep copy since otherwise we'd be append the same list over and over
             res.add(new ArrayList<Character>(path));
             return;
@@ -32,7 +30,16 @@ public class Permutation {
     }
 
     public static void main(String[] args) {
-        String input = "aa";
+        String input = "aab";
         System.out.println("Permutations : " + Permutation.permute(input.toCharArray()));
     }
+    /*
+    [A, A, B]
+[A, B, A]
+[A, A, B]
+[A, B, A]
+[B, A, A]
+[B, A, A]
+
+     */
 }

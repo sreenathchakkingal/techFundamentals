@@ -1,6 +1,4 @@
-package main.java.algo.combinatorial;
-
-import main.java.helloworld.Solution;
+package main.java.algo.backtracking;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -8,25 +8,28 @@ public class Solution {
     public int numTilePossibilities(String tiles) {
         char[] letters = tiles.toCharArray();
         boolean[] visited = new boolean[letters.length];
-        List<String> result = new ArrayList<>();
+        Set<String> result = new HashSet<>();
         for (int k = 1; k <= tiles.length(); k++) {
-            dfs(letters, new LinkedList<>(), result, k, 0);
+            dfs(letters, new LinkedList<>(), result, k, visited);
         }
+//        dfs(letters, new LinkedList<>(), result, 2, visited);
         return result.size();
     }
 
-    private void dfs(char[] letters, LinkedList<Character> path, List<String> result, int k, int start) {
+    private void dfs(char[] letters, LinkedList<Character> path, Set<String> result, int k, boolean[] visited) {
 
-        if (path.size() ==k && !result.contains(path.toString())) {
+        if (path.size() ==k ) {
             result.add(path.toString());
-            System.out.println(path.toString());
             return;
         }
 
-        for (int i = start; i < letters.length; i++) {
+        for (int i = 0; i<letters.length; i++) {
+            if(visited[i]) continue;
             path.add(letters[i]);
-            dfs(letters, path, result, k, i+1);
+            visited[i]=true;
+            dfs(letters, path, result, k, visited);
             path.removeLast();
+            visited[i]=false;
         }
     }
 
